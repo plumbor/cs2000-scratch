@@ -8,6 +8,15 @@ fun add-bad-year-column(t :: Table) -> Table:
     get-column(r, "costs") > get-column(r, "revenues")
   end
   build-column(t, "bad-year", is-bad)
+where:
+  table1 = table: year,costs, revenues
+    row: 2000, 5, 10
+    row: 2000, 10, 5
+    row: 2000, 3, 6
+  end
+  table1 = table: year,costs, revenues
+    row:
+  end
 end
 
 
